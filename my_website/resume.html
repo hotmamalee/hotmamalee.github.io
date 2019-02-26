@@ -1,0 +1,181 @@
+<!doctype html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>Portfolio</title>
+	  </head>
+	  <body>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+     <a href="aboutme.html">About Me</a>
+       <a href="resume.html">Resume</a>
+        <a href="tipsandtricks.html">Tips and Tricks</a>
+      <a href="todolist.html">Everyone's To-do list</a>
+       <!DOCTYPE html>
+       <!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+</html>
+
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>Resume</h2>
+<p>
+
+Coronado High School
+Class of 2019
+
+
+
+
+
+Born March 25, 2001
+(currently 17 years old)
+
+Parent: Vicky Lee
+
+
+
+
+</p>
+
+<header>
+  <h2>Brandon Lee Romo (Brandon Lee)</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Water Polo</a></li>
+      <li><a href="#">Swim Team
+     </a></li>
+     <li><a href="#">Academics
+     </a></li>
+     <img src="images/self.jpg" height="200" alt="self portrait">
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Water Polo Accomplishments</h1>
+    <p>3 year Varsity letter, 
+2016 Steven R. Schofer Award,
+2017 CIF Open Division Champion,
+Joined San Diego Shores at age 10 (2011-2015)(2016-present),
+Played for Coronado 18U team as a Freshman (2015-2016),
+Finished 5th in Platinum Division at 2015 Junior Olympics
+</p>
+<h1>Swim Team Accomplishments</h1>
+    <p>3 year Varsity letter (not including upcoming senior year),
+2016 Most Improved,
+2017 City Conference Qualifier and Finalist (2 events),
+2017 CIF Qualifier and Finalist,
+2018 City Conference Qualifier (3 events),
+2018 CIF Qualifier
+</p>
+<h1>Academic Accomplishments</h1>
+<p>2017 All Academic Team member (water polo),
+2018 San Diego Union Tribune Academic Award (swim team)
+
+</p>
+  </article>
+</section>
+
+
+
+</body>
+</html>
